@@ -1,10 +1,31 @@
 # Spreadsheet Widget
 
-Use this Widget to access to Google Spreadsheet and print the Document in your own style.
+Use this Widget to access a Google Spreadsheet and print the Document in your own style on Dashboard.
 
-## 
+## Dependencies
+Using this widget to access Google spreadsheets requires you install the following gems separately.
+Add this lines to your application's Gemfile:
+```ruby 
 gem 'google_drive'
 gem 'google-spreadsheet-ruby'
-
+```
+And then execute:
+```ruby
 bundle
+```
 
+## Installation
+Add all project files in the same folders of your project and customize your project.erb
+
+## OAuth Token
+To use the widget you have to create some Token on Google and generate an refresh Token.
+
+### Acquiring API keys
+1. Go to the [Google Developers Console](https://console.developers.google.com/project).
+2. Select a project, or create a new one.
+3. In the sidebar on the left, expand **APIs & auth**. Next, click **APIs**. Select the **Enabled APIs** link in the API section to see a list of all your enabled APIs. Make sure that the API is on the list of enabled APIs. If you have not enabled it, select the API from the list of APIs, then select the **Enable API** button for the API.
+4. In the sidebar on the left, select **Credentials**.
+5. Click **Create new Key** and create and use a **server key** if your application runs on a server.
+
+### Create refreshToken
+1. $vi get_access_token.rb

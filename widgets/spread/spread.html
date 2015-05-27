@@ -1,14 +1,14 @@
 <h1 class="title" data-bind="title"></h1>
 <span data-bind="modified"></span>
-<div id="spreadWidget">
-  <table id="spreadWidget_table">
+<div id="header">
+  <table id="header_table">
     <colgroup>
-      <col width="100" />
-      <col width="100" />
-      <col width="100" />
-      <col width="151" />
-      <col width="100" />
-      <col width="300" />
+      <col width="16%" />
+      <col width="16%" />
+      <col width="16%" />
+      <col width="16%" />
+      <col width="16%" />
+      <col width="20%" />
     </colgroup>
     <tbody>
       <tr data-foreach-value="header">
@@ -19,6 +19,20 @@
         <td data-bind="value.c5"></td>
         <td data-bind="value.c6"></td>
       </tr>
+    </tbody>
+  </table>
+</div>
+<div id="spreadWidget">
+  <table id="spreadWidget_table">
+    <colgroup>
+      <col width="16%" />
+      <col width="16%" />
+      <col width="16%" />
+      <col width="16%" />
+      <col width="16%" />
+      <col width="20%" />
+    </colgroup>
+    <tbody>
       <tr data-foreach-value="rows">
         <td data-bind="value.c1"></td>
         <td data-bind="value.c2"></td>
@@ -44,7 +58,7 @@
     }, 40000);
   }
   function scroll_up() {
-    $('#spreadWidget_table').animate({
+    $('#spreadWidget').animate({
       scrollTop : 0
     }, 30000);
     setTimeout(function() {

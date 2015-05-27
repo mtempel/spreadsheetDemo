@@ -2,15 +2,15 @@ require "rubygems"
 require "google/api_client"
 require "google_drive"
 
-client_id = "801333727992-383os5l58no3mcok3qr0b6bj5h6lsdab.apps.googleusercontent.com"
-client_secret = "uFoAHJfEzQWPbvVDttA0UCaX"
-refresh_token = "1/MQND1vvBUchg3Bijl6j6JKtEbBlJbNuIQWTIEllHe-I"
-doc_id = "1zlycWSOb4WhCegkSGDO5VT6nzHzj_hv8kOS3X2PyIUc"
+client_id = "YOUR_CLIENT_ID"
+client_secret = "YOUR_CLIENT_SECRET"
+refresh_token = "YOUR_REFRESH_TOKEN"
+doc_id = "DOCUMENT_ID"
 
 SCHEDULER.every '15m', :first_in => 0 do |job|
   begin
     # initialize the connection to Google OAuth API
-    client = Google::APIClient.new(:application_name => 'Example Ruby application', :application_version => '1.0.0')
+    client = Google::APIClient.new(:application_name => 'Ruby application', :application_version => '1.0.0')
         auth = client.authorization
         auth.client_id = client_id
         auth.client_secret = client_secret

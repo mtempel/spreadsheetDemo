@@ -5,8 +5,8 @@ require "google_drive"
 # Authorizes with OAuth and gets an access token.
 client = Google::APIClient.new
 auth = client.authorization
-auth.client_id = "633218478946-8la2kjns80s3gld7t3tig4ig73g2nneo.apps.googleusercontent.com" # YOUR CLIENT ID
-auth.client_secret = "hVCOBzMNcvjVV_ao4LoH-t9S" # YOUR CLIENT SECRET
+auth.client_id = "YOUR_CLIENT_ID"
+auth.client_secret = "YOUR_CLIENT_SECRET"
 auth.scope =
    "https://www.googleapis.com/auth/drive " +
    "https://spreadsheets.google.com/feeds/"
@@ -22,5 +22,4 @@ print "Save your access token\n\n"
 print access_token
 print "\nSave your refresh token\n\n"
 print auth.refresh_token
-print ""
-
+print "\n\n"

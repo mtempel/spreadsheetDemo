@@ -28,4 +28,10 @@ To use the widget you have to create some Token on Google and generate an refres
 5. Click **Create new Key** and create and use a **server key** if your application runs on a server.
 
 ### Create refreshToken
-1. $vi get_access_token.rb
+1. $ vi get_access_token.rb
+2. Set YOUR_CLIENT_ID and YOUR_CLIENT_SECRET which you have generate on Google Developers Console
+3. ```ruby ruby get_access_token.rb ``` and follow the steps
+4. $ vi jobs/spread.rb
+5. Set YOUR_CLIENT_ID, YOUR_CLIENT_SECRET and YOUR_REFRESH_TOKEN
+6. The DOCUMENT_ID is the bold part of the fileURL https://docs.google.com/spreadsheets/d/**1zlycWSOb4WhChhku7t8hiT6nzHzj_hv8kOS3X2PyIUc**/edit#gid=0
+7. Save the file and type $ dashing start

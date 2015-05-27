@@ -37,8 +37,8 @@ To use the widget you have to create some Token on Google and generate an refres
 7. Save the file and start dashing ```dashing start```
 
 ## Demo
-**Before**
+### Before
 ![before](https://github.com/mtempel/spreadsheetDemo/blob/master/images/spreadsheet.png)
 
-**Result**
+### Result
 ![result](https://github.com/mtempel/spreadsheetDemo/blob/master/images/spreadWidget.png)

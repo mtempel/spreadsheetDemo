@@ -1,0 +1,54 @@
+<h1 class="title" data-bind="title"></h1>
+<span data-bind="modified"></span>
+<div id="spreadWidget">
+  <table id="spreadWidget_table">
+    <colgroup>
+      <col width="100" />
+      <col width="100" />
+      <col width="100" />
+      <col width="151" />
+      <col width="100" />
+      <col width="300" />
+    </colgroup>
+    <tbody>
+      <tr data-foreach-value="header">
+        <td data-bind="value.c1"></td>
+        <td data-bind="value.c2"></td>
+        <td data-bind="value.c3"></td>
+        <td data-bind="value.c4"></td>
+        <td data-bind="value.c5"></td>
+        <td data-bind="value.c6"></td>
+      </tr>
+      <tr data-foreach-value="rows">
+        <td data-bind="value.c1"></td>
+        <td data-bind="value.c2"></td>
+        <td data-bind="value.c3"></td>
+        <td data-bind="value.c4"></td>
+        <td data-bind="value.c5"></td>
+        <td data-bind="value.c6"></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<script type='text/javascript'>
+  setTimeout(function() {
+    scroll_down();
+  }, 5000);
+
+  function scroll_down() {
+    $('#spreadWidget').animate({
+      scrollTop : $("#spreadWidget_table").height() - $("#spreadWidget").height() + 50
+    }, 30000);
+    setTimeout(function() {
+      scroll_up();
+    }, 40000);
+  }
+  function scroll_up() {
+    $('#spreadWidget_table').animate({
+      scrollTop : 0
+    }, 30000);
+    setTimeout(function() {
+      scroll_down();
+    }, 40000);
+  }
+</script>

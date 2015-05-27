@@ -1,0 +1,50 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #003333;
+$text-color:    #fff;
+$rowcolor-a:		#003333;
+$rowcolor-b:		#0d4d4d;
+$border:		solid 1px #669999;
+
+// ----------------------------------------------------------------------------
+// Widget-text styles
+// ----------------------------------------------------------------------------
+
+
+.widget-spreadWidget {
+  padding: 3px 0px 0px 0px !important;
+  background-color: $background-color;
+}
+
+#spreadWidget {
+  height: 957px;
+  overflow-y: hidden;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+tbody {
+  color: $text-color;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+tr {
+  height: 55px;
+  border: $border;
+}
+
+td {
+  border: $border;
+}
+
+tr:nth-child(even) {
+  background-color: $rowcolor-a;
+}
+ 
+tr:nth-child(odd) {
+  background-color: $rowcolor-b;
+}

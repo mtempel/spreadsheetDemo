@@ -35,3 +35,10 @@ To use the widget you have to create some Token on Google and generate an refres
 5. Set YOUR_CLIENT_ID, YOUR_CLIENT_SECRET and YOUR_REFRESH_TOKEN
 6. The DOCUMENT_ID is the bold part of the fileURL docs.google.com/spreadsheets/d/**1zlycWSOb4WhChhku7t8hiT6nzHzj_hv8kOS3X2PyIUc**/edit#gid=0
 7. Save the file and start dashing ```dashing start```
+
+## Demo
+**Before**
+![before](https://github.com/mtempel/spreadsheetDemo/blob/master/images/spreadsheet.png)
+
+**Result**
+![result](https://github.com/mtempel/spreadsheetDemo/blob/master/images/spreadWidget.png)

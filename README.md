@@ -6,8 +6,8 @@ Use this Widget to access a Google Spreadsheet and print the Document in your ow
 Using this widget to access Google spreadsheets requires you install the following gems separately.
 Add this lines to your application's Gemfile:
 ```ruby 
-gem 'google_drive'
-gem 'google-spreadsheet-ruby'
+gem install google_drive
+gem install google-spreadsheet-ruby
 ```
 And then execute:
 ```ruby
